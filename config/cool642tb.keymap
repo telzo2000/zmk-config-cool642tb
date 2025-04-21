@@ -35,6 +35,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
         };
+
+        Lcrick {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        Rcrick {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
+
+        Mcrick {
+            bindings = <&mkp MB3>;
+            key-positions = <19 20 18>;
+        };
     };
 
     macros {
