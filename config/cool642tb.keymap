@@ -50,6 +50,11 @@
             bindings = <&mkp MB3>;
             key-positions = <19 20 18>;
         };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
@@ -132,10 +137,10 @@
 
         SCROLL {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp Q       &kp W      &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp UP     &kp O       &kp P
+&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2    &kp H     &kp LEFT  &kp DOWN   &kp RIGHT   &kp ENTER
+&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4    &kp N     &kp M     &kp COMMA  &kp PERIOD  &kp SLASH
+&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &mkp MB4  &mkp MB5                                   &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
