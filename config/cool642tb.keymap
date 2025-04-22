@@ -52,7 +52,7 @@
         };
 
         at {
-            bindings = <&kp AT>;
+            bindings = <&kp AT_SIGN>;
             key-positions = <30 31>;
         };
 
@@ -112,7 +112,7 @@
 &kp F1       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F5                                                &kp Y          &kp U          &kp I           &kp O            &kp P
 &kp AT_SIGN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON   &kp N1          &kp INT_KATAKANAHIRAGANA  &kp LEFT       &kp DELETE     &kp BACKSPACE   &kp PLUS         &kp ASTERISK
 &kp Z        &kp N7        &kp N8        &kp N9        &kp B       &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)  &kp RG(SPACE)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
-&kp RSHIFT   &kp TAB       &kp LCTRL     &kp RGUI      &kp PERIOD  &kp N0          &none                     &lt 2 SPACE                                                    &kp LEFT_SHIFT
+&kp RSHIFT   &kp TAB       &kp LCTRL     &kp RGUI      &kp PERIOD  &kp N0          &none                     &lt 2 SPACE                                                    &kp UNDER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
