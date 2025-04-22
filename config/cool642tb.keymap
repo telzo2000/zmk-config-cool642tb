@@ -18,7 +18,7 @@
 
         comb1 {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <12 13>;
         };
 
         comb2 {
@@ -55,6 +55,11 @@
             bindings = <&kp AT>;
             key-positions = <30 31>;
         };
+
+        scrool {
+            bindings = <&lt 1 LCTRL>;
+            key-positions = <18 20>;
+        };
     };
 
     macros {
@@ -85,7 +90,7 @@
 &kp Q               &kp W    &kp E             &kp R         &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A               &kp S    &kp D             &kp F         &kp G        &to 1                 &kp MINUS                 &kp H        &kp J  &kp K      &kp L       &lt 5 COLON
 &mt LEFT_SHIFT Z    &kp X    &kp C             &kp V         &kp B        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&mt LEFT_SHIFT ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 SPACE  &mt LCTRL LS(SQT)     &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER                                &kp BACKSLASH
+&mt LEFT_SHIFT ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 SPACE  &mt LCTRL CAPSLOCK    &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER                                &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
