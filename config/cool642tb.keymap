@@ -88,7 +88,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W    &kp E             &kp R         &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A               &kp S    &kp D             &kp F         &kp G        &to 1                 &kp MINUS                 &kp H        &kp J  &kp K      &kp L       &lt 5 COLON
+&kp A               &kp S    &kp D             &kp F         &kp G        &to 1                 &kp MINUS                 &kp H        &kp J  &kp K      &kp L       &lt 5 LS(SEMI)
 &mt LEFT_SHIFT Z    &kp X    &kp C             &kp V         &kp B        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &mt LEFT_SHIFT ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 SPACE  &mt LCTRL CAPSLOCK    &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER                                &kp BACKSLASH
             >;
@@ -131,10 +131,10 @@
 
         MOUSE {
             bindings = <
-&kp Q       &kp W    &kp E             &kp R         &kp T                            &kp Y          &kp U  &kp I     &kp O     &kp P
-&kp A       &kp S    &kp D             &kp F         &kp G     &kp N1    &kp N2       &kp H          &kp J  &kp K     &kp L     &kp ENTER
-&kp Z       &kp X    &kp C             &kp V         &kp B     &kp N3    &kp N4       &kp N          &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2  &lt 2 SPACE  &kp BACKSPACE                             &kp LEFT_SHIFT
+&kp Q       &kp W    &kp E             &kp R         &kp T                                  &kp Y      &kp U  &kp I     &kp O     &kp P
+&kp A       &kp S    &kp D             &kp F         &kp G      &kp N1     &kp N2           &kp H      &kp J  &mkp MB1  &mkp MB2  &kp ENTER
+&kp Z       &kp X    &kp C             &kp V         &kp B      &kp N3     &kp N4           &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE  &kp LCTRL  &lt 2 BACKSPACE  &kp ENTER                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
