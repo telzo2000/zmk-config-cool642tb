@@ -8,6 +8,7 @@
 #define NUM 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -113,7 +114,7 @@
         default_layer {
             bindings = <
 &kp Q                 &kp W    &kp E             &kp R         &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A                 &kp S    &kp D             &kp F         &kp G        &to 1                 &kp MINUS                 &kp H        &kp J  &kp K      &kp L       &lt 5 LS(SEMI)
+&kp A                 &kp S    &kp D             &kp F         &kp G        &to 6                 &kp MINUS                 &kp H        &kp J  &kp K      &kp L       &lt 5 SINGLE_QUOTE
 &mt LEFT_SHIFT Z      &kp X    &kp C             &kp V         &kp B        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &mt LEFT_SHIFT LCTRL  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 SPACE  &mt LCTRL CAPSLOCK    &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER                                &kp BACKSLASH
             >;
@@ -157,7 +158,7 @@
         MOUSE {
             bindings = <
 &kp Q             &kp W    &kp E             &kp R         &kp T                                  &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S    &kp D             &kp F         &kp G      &kp N1     &kp N2           &kp H        &kp J  &kp K     &kp L     &kp ENTER
+&kp A             &kp S    &kp D             &kp F         &kp G      &kp N1     &kp N2           &kp H        &kp J  &kp K     &kp L     &lt 5 SINGLE_QUOTE
 &mt LEFT_SHIFT Z  &kp X    &kp C             &kp V         &kp B      &kp N3     &kp N4           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
 &mt LCTRL ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE  &kp LCTRL  &lt 2 BACKSPACE  &lt 2 ENTER                             &kp LEFT_SHIFT
             >;
@@ -165,7 +166,7 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        SCROLL {
+        arrow {
             bindings = <
 &kp Q       &kp W      &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp UP     &kp O       &kp P
 &kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2    &kp H     &kp LEFT  &kp DOWN   &kp RIGHT   &kp ENTER
@@ -176,12 +177,12 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        layer_6 {
+        GAME {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp ESC         &kp Q      &kp W     &kp E     &kp T                     &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp TAB         &kp A      &kp S     &kp D     &kp G  &kp N1     &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
+&kp LEFT_SHIFT  &kp X      &kp C     &kp V     &kp B  &kp N3     &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCTRL       &kp LCTRL  &kp LGUI  &kp LALT  &kp M  &kp SPACE  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
