@@ -191,13 +191,13 @@
 
         GAME {
             bindings = <
-&kp ESC         &kp Q      &kp W     &kp E     &kp T                     &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp TAB         &kp A      &kp S     &kp D     &kp G  &kp N1     &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp LEFT_SHIFT  &kp X      &kp C     &kp V     &kp B  &kp N3     &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL       &kp LCTRL  &kp LGUI  &kp LALT  &kp M  &kp SPACE  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp ESC         &kp Q      &kp W     &kp E     &mt NUMBER_4 NUMBER_3                     &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp TAB         &kp A      &kp S     &kp D     &kp G                  &to 0      &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
+&kp LEFT_SHIFT  &kp X      &kp C     &kp V     &kp B                  &kp N3     &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCTRL       &kp LCTRL  &kp LGUI  &kp LALT  &kp M                  &kp SPACE  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
