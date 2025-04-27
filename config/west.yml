@@ -1,13 +1,13 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: fffyuto
+      url-base: https://github.com/fffyuto
     - name: telzo2000
       url-base: https://github.com/telzo2000
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: fffyuto
+      revision: fffyuto-patch-1
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: telzo2000
