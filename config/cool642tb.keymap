@@ -75,6 +75,7 @@
         scrool {
             bindings = <&lt 1 LCTRL>;
             key-positions = <18 20>;
+            require-prior-idle-ms = <20>;
         };
     };
 
