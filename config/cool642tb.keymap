@@ -137,7 +137,7 @@
         FUNCTION {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &text_box                                         &kp N6         &kp N7        &kp N8                &kp N9                 &kp N0
-&none         &none         &none         &none         &hyouji_kotei  &bt BT_CLR_ALL  &kp INT_MUHENKAN   &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
+&none         &none         &kp LG(TAB)   &none         &hyouji_kotei  &bt BT_CLR_ALL  &kp INT_MUHENKAN   &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
 &none         &none         &none         &none         &macro         &none           &kp RIGHT_BRACKET  &kp TILDE      &kp QUESTION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION
 &none         &none         &none         &none         &none          &none           &kp MINUS          &kp COMMA                                                                 &kp LEFT_SHIFT
             >;
