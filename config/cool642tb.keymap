@@ -170,7 +170,7 @@
         MOUSE {
             bindings = <
 &kp Q             &kp W    &kp E         &kp R         &kp T                                             &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S    &kp D         &kp F         &kp G        &kp N1              &kp N2           &kp H        &kp J  &kp K      &kp L       &lt 5 SINGLE_QUOTE
+&kp A             &kp S    &kp D         &kp F         &kp G        &kp N1              &kp MINUS        &kp H        &kp J  &kp K      &kp L       &lt 5 SINGLE_QUOTE
 &mt LEFT_SHIFT Z  &kp X    &kp C         &kp V         &kp B        &kp N3              &kp N4           &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &mt LCTRL ESCAPE  &kp TAB  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &mt LCTRL CAPSLOCK  &lt 2 BACKSPACE  &lt 2 ENTER                                &kp LEFT_SHIFT
             >;
