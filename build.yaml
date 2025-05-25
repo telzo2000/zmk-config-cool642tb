@@ -19,11 +19,9 @@
 ---
 include:
  - board: seeeduino_xiao_ble
-   shield: cool642tb_R
+   shield: cool642tb_R rgbled_adapter
    snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
-   shield: cool642tb_L
+   shield: cool642tb_L rgbled_adapter
  - board: seeeduino_xiao_ble
    shield: settings_reset
-
-
