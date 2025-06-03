@@ -88,7 +88,7 @@
 &kp LEFT_SHIFT  &lt 3 LA(GRAVE)  &mt LEFT_ALT UP  &mt LEFT_CONTROL DOWN  &lt 2 SPACE  &lt 1 ENTER   &lt 2 SPACE    &lt 1 ENTER                                &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) K_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         layer_1 {
