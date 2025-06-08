@@ -1,0 +1,15 @@
+/ {
+
+    /* ── 全 Layer-Tap (&lt) に即ホールド判定を適用 ── */
+    &lt {
+        flavor = "hold-preferred";   /* 他キーを押した瞬間に Hold 確定 */
+        tapping-term-ms = <200>;     /* 境界時間。お好みで調整 */
+    };
+
+    /* ── Mod-Tap (&mt) も同じ挙動にしたい場合 ── */
+    &mt {
+        flavor = "hold-preferred";
+        quick-tap-ms = <0>;          /* 既存設定を残すならここに併記 */
+        tapping-term-ms = <200>;
+    };
+};
