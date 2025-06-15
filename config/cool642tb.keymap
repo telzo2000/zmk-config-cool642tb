@@ -69,60 +69,60 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W    &kp E             &kp R         &kp T                                                      &kp Y          &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S    &kp D             &kp F         &kp G         &to 1                 &kp MINUS              &kp H          &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X    &kp C             &kp V         &kp B         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE           &lt 2 SPACE            &kp BACKSPACE                                &kp LEFT_SHIFT
+&kp Q               &kp W         &kp E                        &kp R            &kp T                           &kp Y          &kp U  &kp I      &kp O       &kp P
+&mt LEFT_SHIFT A    &kp S         &kp D                        &kp F            &kp G        &mo 4  &none       &kp H          &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
+&mt LEFT_CONTROL Z  &kp X         &kp C                        &kp V            &kp B        &mo 3  &caps_word  &kp N          &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_CONTROL SLASH
+&kp LEFT_GUI        &kp LEFT_ALT  &mt LS(LEFT_CONTROL) ESCAPE  &lt 1 LC(SPACE)  &lt 3 SPACE  &mo 2  &kp ENTER   &kp BACKSPACE                                &kp BACKSLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
-&kp N1           &kp N2       &kp N3        &kp N4        &kp N5                                             &kp N6          &kp N7        &kp N8                &kp N9                 &kp N0
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &to 0             &kp INT_MUHENKAN   &kp AMPERSAND   &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
-&kp PLUS         &kp MINUS    &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE       &kp QUESTION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION
-&bt BT_PRV       &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &kp MINUS          &bt BT_CLR_ALL                                                             &kp LEFT_SHIFT
+&kp TAB       &kp LS(BACKSLASH)  &kp BACKSLASH                &kp LS(EQUAL)    &kp EQUAL                      &kp LBKT        &kp RBKT        &kp DQT         &kp SQT          &kp PRINTSCREEN
+&kp LC(A)     &kp LC(S)          &kp LC(D)                    &kp LC(F)        &kp TILDE    &mo 4  &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp COLON
+&kp LC(Z)     &kp LC(X)          &kp LC(C)                    &kp LC(V)        &kp GRAVE    &mo 3  &kp DEL    &kp LPAR        &kp RPAR        &kp LEFT_BRACE  &kp RBRC         &kp SEMICOLON
+&kp LEFT_GUI  &kp LEFT_ALT       &mt LS(LEFT_CONTROL) ESCAPE  &lt 1 LC(SPACE)  &lt 3 SPACE  &mo 2  &kp ENTER  &kp BACKSPACE                                                    &kp BACKSLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        NUM {
-            bindings = <
-&kp F1       &kp F2   &kp F3             &kp F4         &kp F5                                                  &kp F6          &kp F7          &kp F8          &kp F9           &kp F10
-&kp AT_SIGN  &kp SQT  &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &kp N1          &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT        &kp ENTER
-&kp Z        &kp X    &kp C              &kp V          &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
-&kp RSHIFT   &kp TAB  &kp LCTRL          &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        ARROW {
-            bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         MOUSE {
             bindings = <
-&kp Q       &kp W    &kp E             &kp R         &kp T                            &kp Y          &kp U  &kp I     &kp O     &kp P
-&kp A       &kp S    &kp D             &kp F         &kp G     &kp N1    &kp N2       &kp H          &kp J  &kp K     &kp L     &kp ENTER
-&kp Z       &kp X    &kp C             &kp V         &kp B     &kp N3    &kp N4       &kp N          &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2  &lt 2 SPACE  &kp BACKSPACE                             &kp LEFT_SHIFT
+&kp C_AC_REFRESH  &kp C_AC_SEARCH  &kp C_BRIGHTNESS_DEC      &kp C_BRIGHTNESS_INC  &kp C_PREV                           &none               &msc MOVE_X(-10)     &msc MOVE_Y(10)   &msc MOVE_X(10)  &none
+&kp LC(A)         &kp SQT          &kp C_VOL_DN              &kp C_VOL_UP          &kp C_PLAY_PAUSE  &mo 4  &none       &none               &mkp MB1             &msc MOVE_Y(-10)  &mkp MB2         &none
+&kp LC(Z)         &kp LC(X)        &kp LC(C)                 &kp LC(V)             &kp C_NEXT        &mo 3  &caps_word  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &mkp MB3          &none            &none
+&kp LEFT_GUI      &kp LEFT_ALT     &mt LS(LEFT_CONTROL) ESC  &lt 1 LC(SPACE)       &lt 3 SPACE       &mo 2  &kp ENTER   &kp BACKSPACE                                                               &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
-        SCROLL {
+        NUM {
+            bindings = <
+&kp LS(N1)    &kp LS(N2)    &kp LS(N3)                &kp LS(N4)       &kp LS(N5)                     &kp LS(N6)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&kp N1        &kp N2        &kp N3                    &kp N4           &kp N5       &mo 4  &kp N2     &kp N6         &kp N7      &kp N8      &kp N9      &kp N0
+&kp F1        &kp F2        &kp F3                    &kp F4           &kp F5       &mo 3  &kp F12    &kp F6         &kp F7      &kp F8      &kp F9      &kp F10
+&kp LEFT_GUI  &kp LEFT_ALT  &mt LS(LEFT_CONTROL) ESC  &lt 1 LC(SPACE)  &lt 3 SPACE  &mo 2  &kp ENTER  &kp BACKSPACE                                      &kp F11
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+        };
+
+        BlueTooth {
+            bindings = <
+&none  &none  &none  &none  &none                         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&none  &none  &none  &none  &none  &none  &bt BT_CLR      &none          &bt BT_PRV     &bt BT_NXT     &none          &none
+&none  &none  &none  &none  &none  &none  &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+&none  &none  &none  &none  &none  &none  &none           &none                                                       &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+        };
+
+        layer_5 {
             bindings = <
 &kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
