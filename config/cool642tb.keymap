@@ -89,8 +89,6 @@
 &kp Z      &kp X     &kp C      &kp V         &kp B      &kp TAB   &mo 2              &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LCTRL  &kp LALT  &kp LSHFT  &lt 1 RETURN  &kp SPACE  &kp BSPC  &kp RIGHT_COMMAND  &kp SPACE                                &trans
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -100,8 +98,6 @@
 &trans  &trans          &trans          &trans           &trans  &trans  &trans    &trans    &mkp MB1   &mkp MB2   &mkp MB3  &trans
 &trans  &trans          &trans          &trans           &trans  &trans  &mkp MB4  &mkp MB5                                  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         NUMBER {
@@ -111,8 +107,6 @@
 &kp LS(PRCNT)  &kp N7  &kp N8   &kp N9        &kp LS(STAR)  &kp FSLH  &trans  &trans  &trans  &trans  &trans  &trans
 &degree        &kp N0  &kp DOT  &lt 1 RETURN  &kp EQUAL     &kp BSPC  &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         Symbols {
