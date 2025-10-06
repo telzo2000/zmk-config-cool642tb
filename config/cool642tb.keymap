@@ -123,5 +123,14 @@
 &kp LCTRL      &kp LALT       &kp LSHFT     &kp RET       &kp SPACE     &kp BSPC      &kp RIGHT_COMMAND  &kp SPACE                          &trans
             >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
+        };
     };
 };
