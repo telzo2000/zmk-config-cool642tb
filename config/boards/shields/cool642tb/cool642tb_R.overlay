@@ -14,6 +14,7 @@
             ;
 };
 
+
 &zip_temp_layer {
     excluded-positions = <
         18 // J
@@ -21,10 +22,8 @@
         21 // L
         34 // ;
     >;
-};
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 10000>;
+    require-prior-idle-ms = <200>;
 };
 
 / {
@@ -35,6 +34,16 @@
         input-processors = <&zip_temp_layer 5 10000>;
     };
 };
+
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 5 10000>;
+};
+
+
+
+
+
 
 &pinctrl {
     spi0_default: spi0_default {
