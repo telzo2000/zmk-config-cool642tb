@@ -94,7 +94,7 @@
         NUM {
             bindings = <
 &kp F1            &kp F2        &kp F3        &kp F4   &kp F5                                   &kp F6   &kp F7            &kp F8          &kp F9           &kp F10
-&kp NUMBER_1      &kp N2        &kp N3        &kp N4   &kp N5  &kp N1          &kp F11          &kp F12  &out OUT_USB      &out OUT_BLE    &kp RIGHT        &kp F12
+&kp NUMBER_1      &kp N2        &kp N3        &kp N4   &kp N5  &kp N1          &kp F11          &kp F12  &out OUT_USB      &out OUT_BLE    &kp LEFT_ARROW   &kp RIGHT_ARROW
 &kp NUMBER_6      &kp N7        &kp N8        &kp N9   &kp N0  &kp ESC         &kp UNDER        &kp LT   &kp GREATER_THAN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp TAB  &none   &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &none                                                       &kp BACKSPACE
             >;
