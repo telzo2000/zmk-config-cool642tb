@@ -2,20 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kumamuk-git
-      url-base: https://github.com/kumamuk-git
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: telzo2000
+      url-base: https://github.com/telzo2000
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: kumamuk-git
-      revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
+      remote: telzo2000
       revision: main
   self:
     path: config
