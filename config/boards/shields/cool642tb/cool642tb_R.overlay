@@ -99,6 +99,7 @@
         layers = <1>;
         
         input-processors = <
+            &zip_x_scaler 1 3    // X方向を1/3に抑制
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
             &zip_xy_to_scroll_mapper  
             &zip_scroll_x_scaler 1 40
