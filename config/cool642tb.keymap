@@ -153,7 +153,7 @@
             bindings = <
 &kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                                  &kp F6          &kp F7          &kp F8          &kp F9           &kp F10
 &kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &mo 1           &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT        &kp ENTER
-&kp A         &kp X         &kp C              &kp V          &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
+&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
             >;
 
