@@ -108,7 +108,10 @@
         >;
         process-next; 
     };
-        input-processors = <&zip_temp_layer_threshold 4 10000>;
+        input-processors = <
+            &zip_y_scaler 2 1
+            &zip_temp_layer_threshold 4 10000
+        >;
 
     };
 };
