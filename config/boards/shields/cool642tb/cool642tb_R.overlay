@@ -115,6 +115,15 @@
 
     };
 };
+// #include <input/processors.dtsi>
+// / {
+//    trackball_listener: trackball_listener {
+//        compatible = "zmk,input-listener";
+//        device = <&trackball>;
+// トラボ使用後10秒間、レイヤー4が有効
+//        input-processors = <&zip_temp_layer 4 10000>;
+//    };
+// };
 
 / {
     zip_temp_layer_threshold: zip_temp_layer_threshold {
