@@ -84,47 +84,46 @@
         };
     };
 
-   // エンコーダー：キー
+    // エンコーダー：キー
 
-        rot_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
+    rot_kp: sensor_rotate_kp {
+        compatible = "zmk,behavior-sensor-rotate-var";
+        #sensor-binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+    };
 
-        // エンコーダー：マウススクロール 
+    // エンコーダー：マウススクロール 
 
-        rot_msc: sensor_rotate_msc {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            tap-ms = <20>;
-            bindings = <&msc>, <&msc>;
-        };
+    rot_msc: sensor_rotate_msc {
+        compatible = "zmk,behavior-sensor-rotate-var";
+        #sensor-binding-cells = <2>;
+        tap-ms = <20>;
+        bindings = <&msc>, <&msc>;
+    };
 
-        // エンコーダー：マウススクロール(MOVE_Y)
+    // エンコーダー：マウススクロール(MOVE_Y)
 
-        scroll_move_y: sensor_rotate_msc_for_move_y {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
+    scroll_move_y: sensor_rotate_msc_for_move_y {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
 
-            // tap-ms下限メモ Yの値で可変: Y(15) <81>, Y(20) <65>, Y(25) <49>
+        // tap-ms下限メモ Yの値で可変: Y(15) <81>, Y(20) <65>, Y(25) <49>
 
-            tap-ms = <65>;
-        };
+        tap-ms = <65>;
+    };
 
-        // エンコーダー：マウススクロール(MOVE_X)
+    // エンコーダー：マウススクロール(MOVE_X)
 
-        scroll_move_x: sensor_rotate_msc_for_move_x {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_X(20)>, <&msc MOVE_X(-20)>;
+    scroll_move_x: sensor_rotate_msc_for_move_x {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc MOVE_X(20)>, <&msc MOVE_X(-20)>;
 
-            // tap-ms下限メモ Xの値で可変: X(15) <81>, X(20) <65>, X(25) <49>
+        // tap-ms下限メモ Xの値で可変: X(15) <81>, X(20) <65>, X(25) <49>
 
-            tap-ms = <65>;
-        };
-
+        tap-ms = <65>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -136,6 +135,7 @@
 &kp Z       &kp X    &kp C             &kp V         &kp B         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE           &lt 2 SPACE            &kp BACKSPACE                                &kp LEFT_SHIFT
             >;
+
             sensor-bindings = <&scroll_move_y>;
         };
 
